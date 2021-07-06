@@ -156,7 +156,7 @@ Slingshot.fly()
 function keyPressed(){
     if(keyCode === 32)
     Slingshot.attach(ball.body);
-    
+    Matter.Body.setPosition(ball.body,{x:200,y:300})
 }
 
 async function getBackgroundImg(){
